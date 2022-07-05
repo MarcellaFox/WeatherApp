@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.headerEmoji {
+  font-size: 50px;
+}
+
+.today {
+  display: block;
+  text-align: center;
+  margin: 60px;
+}
+
+.card {
+  text-align: center;
+}
+
+.forecast {
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+
+.card {
+  border-color: white;
+}
+
+.forecastEmoji {
+  font-size: 30px;
+}
+
+#search-city {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#units {
+  position: relative;
+  top: -6px;
+  font-size: 16px;
+}
+
+#city-header {
+  text-transform: capitalize;
+}
+
+.current-location {
+  margin: 20px;
+}
