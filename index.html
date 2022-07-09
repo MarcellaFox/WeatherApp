@@ -15,20 +15,40 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <h1 id="city">Brisbane</h1>
-            <strong id="temperature">26</strong
-            ><span class="units">ºC | ºF</span>
-            <ul>
-              <li>Last updated at: <span id="date">Saturday 12:00pm</span></li>
-              <li id="weather-description">Sunny</li>
-              <li>Humidity <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/H</li>
-            </ul>
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Search for a city..."
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="search" class="btn btn-primary" />
+            </div>
           </div>
-          <div class="col-6">
-            <img src="" alt="" id="icon" />
+        </form>
+        <div class="weather-overview">
+          <div class="row">
+            <div class="col-6">
+              <h1 id="city">Brisbane</h1>
+              <strong id="temperature">26</strong
+              ><span class="units">ºC | ºF</span>
+              <ul>
+                <li>
+                  Last updated at: <span id="date">Saturday 12:00pm</span>
+                </li>
+                <li id="weather-description">Sunny</li>
+                <li>Humidity <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/H</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <img src="" alt="" id="icon" />
+            </div>
           </div>
         </div>
       </div>
