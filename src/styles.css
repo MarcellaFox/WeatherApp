@@ -41,3 +41,9 @@ li::first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.weather-icon {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
