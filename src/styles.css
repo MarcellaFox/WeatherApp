@@ -27,3 +27,17 @@ li::first-letter {
   font-size: 14px;
   top: -18px;
 }
+
+.weather-temperature a {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}

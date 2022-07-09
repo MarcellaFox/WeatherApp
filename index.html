@@ -34,13 +34,16 @@
         <div class="weather-overview">
           <div class="row">
             <div class="col-6">
-              <h1 id="city">Brisbane</h1>
-              <strong id="temperature">26</strong
-              ><span class="units">ºC | ºF</span>
+              <div class="clearfix weather-temperature">
+                <h1 id="city">Brisbane</h1>
+                <strong id="temperature">26</strong
+                ><span class="units"
+                  ><a href="#" id="celsius-link" class="active">ºC</a> |
+                  <a href="#" id="fahrenheit-link">ºF</a></span
+                >
+              </div>
               <ul>
-                <li>
-                  Last updated at: <span id="date">Saturday 12:00pm</span>
-                </li>
+                <li>Last updated <span id="date">Saturday 12:00pm</span></li>
                 <li id="weather-description">Sunny</li>
                 <li>Humidity <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> km/H</li>
