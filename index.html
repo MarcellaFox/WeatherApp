@@ -1,119 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-6">
+            <h1>Brisbane</h1>
+            <ul>
+              <li>Saturday 12:00pm | Sunny</li>
+              <li>Humidity 60%</li>
+              <li>Precipitation 1%</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <img
+              src="https://static.thenounproject.com/png/121248-200.png"
+              alt="Sunny"
+            />
+            <h1>26ºC | ºF</h1>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/64171ece79.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="today">
-        <h1 id="city-header">Brisbane</h1>
-        <p id="today-date-time">Sunday, 3 July 2022, 2:59pm</p>
-        <div class="headerEmoji">⛅</div>
-        <h3>
-          <span id="current-temperature">21</span>
-          <span id="units">
-            <span id="#celsius">°C</span>
-          </span>
-        </h3>
-        <p id="today-description">Partly Cloudy</p>
-      </div>
-
-      <div class="forecast row row-cols-auto justify-content-center">
-        <div class="card col border-0">
-          <div class="card-body">
-            <h5 class="card-title">Monday</h5>
-            <div class="forecastEmoji">⛅</div>
-            <p class="card-text">20°C / 23°C</p>
-          </div>
-        </div>
-
-        <div class="card col border-0">
-          <div class="card-body">
-            <h5 class="card-title">Tuesday</h5>
-            <div class="forecastEmoji">🌤</div>
-            <p class="card-text">21°C / 24°C</p>
-          </div>
-        </div>
-
-        <div class="card col border-0">
-          <div class="card-body">
-            <h5 class="card-title">Wednesday</h5>
-            <div class="forecastEmoji">🌤</div>
-            <p class="card-text">21°C / 24°C</p>
-          </div>
-        </div>
-
-        <div class="card col border-0">
-          <div class="card-body">
-            <h5 class="card-title">Thursday</h5>
-            <div class="forecastEmoji">🌥</div>
-            <p class="card-text">20°C / 23°C</p>
-          </div>
-        </div>
-
-        <div class="card col border-0">
-          <div class="card-body">
-            <h5 class="card-title">Friday</h5>
-            <div class="forecastEmoji">🌧</div>
-            <p class="card-text">18°C / 22°C</p>
-          </div>
-        </div>
-
-        <div class="card col border-0">
-          <div class="card-body">
-            <h5 class="card-title">Saturday</h5>
-            <div class="forecastEmoji">⛈</div>
-            <p class="card-text">18°C / 21°C</p>
-          </div>
-        </div>
-      </div>
-
-      <form id="search-city">
-        <input
-          type="text"
-          id="search-city-input"
-          placeholder="Search for a city"
-        />
-        <input
-          class="btn btn-primary"
-          type="submit"
-          id="search-button"
-          value="Search"
-        />
-      </form>
-      <div class="d-flex justify-content-center current-location">
-        <button class="btn btn-outline-primary" id="current-location-button">
-          Current Location
-        </button>
-      </div>
-    </div>
-    <a
-      href="https://master--cosmic-wisp-4142ff.netlify.app/"
-      class="footer-links"
-    >
-      Open-source code</a
-    >
-    <span>by Marcella Fox</span>
-    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
