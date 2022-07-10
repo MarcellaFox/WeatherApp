@@ -63,3 +63,23 @@ li::first-letter {
   max-width: 600px;
   margin: 30px auto;
 }
+
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-max {
+  opacity: 0.4;
+}
