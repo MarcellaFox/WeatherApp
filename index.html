@@ -11,10 +11,14 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital@0;1&family=Quicksand:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link href="src/styles.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="custom-body">
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
@@ -30,7 +34,11 @@
                 />
               </div>
               <div class="col-3">
-                <input type="submit" value="search" class="btn btn-primary" />
+                <input
+                  type="submit"
+                  value="search"
+                  class="btn btn-primary city-search-button"
+                />
               </div>
             </div>
           </form>
@@ -50,7 +58,7 @@
                 </ul>
               </div>
               <div class="col-6 weather-icon">
-                <img src="" alt="" id="icon" />
+                <div src="" alt="" id="main-icon-container"></div>
               </div>
             </div>
           </div>
