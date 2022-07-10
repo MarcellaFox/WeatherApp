@@ -22,7 +22,7 @@ li::first-letter {
   line-height: 2;
 }
 
-.weather-app .units {
+.weather-app .unit {
   position: relative;
   font-size: 14px;
   top: -18px;
